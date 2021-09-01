@@ -1,9 +1,12 @@
+/* Reset */
 body {
   color: black;
   background-color: #f1f1f1;
   margin: 0;
   padding: 0;
 }
+
+/* Css Navbar */
 
 .navbar {
   position: fixed;
@@ -34,7 +37,6 @@ body {
   padding: 10px 20px;
   overflow: hidden;
   transition: all 0.3s;
-
 }
 
 .header li a::before {
@@ -59,17 +61,67 @@ body {
   transition: all 0.3s;
 }
 
-.header li a:hover{
-    font-weight: bold;
+.header li a:hover {
+  font-weight: bold;
 }
 
 .header li a:hover::before {
   left: 0;
-  background-color:black
+  background-color: black;
 }
 
 .header li a:hover:after {
   right: 0;
-  background-color:black
+  background-color: black;
+}
 
+/* Css Pag. Principal */
+.home-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.jobs-intro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 50vw;
+}
+
+.jobs-intro h2,
+h5,h4 {
+  margin: 2px;
+  font-weight: 100;
+}
+
+.jobs-intro h5 {
+  font-size: 30px;
+}
+
+.jobs-intro h2 {
+  font-size: 48px;
+  font-style: italic;
+}
+
+.jobs-intro h4 {
+    font-size: 24px;
+    padding: 100px 40px;
+  }
+  
+
+.jobs-portrait {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: center;
+  margin-top: 50px;
+  height: 97vh;
+  opacity: 0.8;
+}
+.jobs-portrait img {
 }
