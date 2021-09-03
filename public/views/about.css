@@ -1,0 +1,189 @@
+/* Reset */
+body {
+  color: black;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+/* Css Navbar */
+
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: #f1f1f1;
+}
+
+.header {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.header li {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 200px;
+}
+
+.header li a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.header li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 1px;
+  background-color: #f1f1f1;
+  transition: all 0.3s;
+}
+
+.header li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 1px;
+  background-color: #f1f1f1;
+  transition: all 0.3s;
+}
+
+.header li a:hover {
+  font-weight: bold;
+}
+
+.header li a:hover::before {
+  left: 0;
+  background-color: black;
+}
+
+.header li a:hover:after {
+  right: 0;
+  background-color: black;
+}
+
+/* Css Pag. Principal */
+.home-body {
+  position: relative;
+
+  top: 50px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-end;
+	align-content: center;
+}
+
+.card {
+  position: relative;
+  margin: 10px;
+  width: 400px;
+  height: 100vh;
+}
+
+.card1{
+  background-image: url("./assets/jobs-cover\(newer\).jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.card2{
+  background-image: url("./assets/date-grid.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.card3{
+  background-image: url("./assets/Jobs-main-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.card:before {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card1:after {
+  display: flex;
+  position: absolute;
+  content: "Steve Jobs was adopted.";
+  color: white;
+  font-size: 32px;
+  align-items: center;
+  text-transform: capitalize;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all .3s;
+  transform: translateY(100%);
+}
+
+.card2:after {
+  display: flex;
+  position: absolute;
+  content: "Steve jobs dated a '60s icon.";
+  color: white;
+  font-size: 32px;
+  align-items: center;
+  text-transform: capitalize;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all .3s;
+  transform: translateY(100%);
+}
+
+.card3:after {
+  display: flex;
+  position: absolute;
+  content: "Steve jobs’s final words were “oh wow. Oh wow. Oh wow.”";
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  align-items: center;
+  text-transform: capitalize;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all .3s;
+  transform: translateY(100%);
+}
+
+.card1:hover:after,
+.card2:hover:after,
+.card3:hover:after {
+  transform: translateY(0%);
+}
